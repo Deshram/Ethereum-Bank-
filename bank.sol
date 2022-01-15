@@ -37,7 +37,7 @@ contract SmartBankContract {
     }
 
     //get ceth balance deposited by user
-    function getCethBalance() public view returns(uint){
+    function getCethBalance(address accountAddress) public view returns(uint){
         return balances[msg.sender];
     }
 
